@@ -11,7 +11,7 @@ export const useSignup = () => {
 
         try {
             //signup user
-            const res = await projectAuth.createUserwithEmailAndPassword(email, password);
+            const res = await projectAuth.createUserWithEmailAndPassword(email, password);
             console.log(res.user);
 
             if (!res) {
